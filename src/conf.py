@@ -6,14 +6,21 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'CursoPython'
+project = 'Curso Python'
 copyright = '2024, Dtar380'
 author = 'Dtar380'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser']
+extensions = [
+    'myst_parser',
+    'sphinx_favicon'
+]
+
+myst_enable_extensions = [
+    'attrs_inline'
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -31,3 +38,4 @@ html_theme_options = {
     "light_logo": "logo_light.png",
     "dark_logo": "logo_dark.png",
 }
+favicons = ["logo.png"]
